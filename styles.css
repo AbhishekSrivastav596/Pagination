@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg,rgb(87, 81, 81),rgb(132, 132, 77))
+}
+
+.container {
+  background-color: #fff;
+  border: 2px solid #b2b2b2;
+  border-radius: 15px;
+  padding: 10px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#fruitslist {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#fruitslist li {
+  padding: 5px;
+  background-color: #f9f9f9;
+  color: #444;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  transition: transform 0.2s;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+#fruitslist li:hover {
+  transform: scale(1.05);
+  background-color: #e3f2fd;
+}
+
+.pagination-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.page {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: #82b1ff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.page:hover {
+  background-color: #2979ff;
+  transform: scale(1.1);
+}
+
+.page.active {
+  background-color: #2979ff;
+  transform: scale(1.15);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
